@@ -22,6 +22,7 @@ throughput-related performance
 
 This data set will be used in protocol comparison and performance measurement, in the simulated environment. It can thus be defined as an simulated, run-time created assessment dataset on healthcare blockchain network analysis.
 ‎
+
 **Code Information:**
 The project is implemented as an NS-3 based C++ simulation framework designed to evaluate blockchain-enabled healthcare data management under different consensus protocols.
 Each scenario file represents a separate experimental configuration implementing a specific consensus or access-control protocol. All scenarios share a common simulation pipeline but differ in the protocol-specific execution stage.
@@ -71,6 +72,7 @@ FlowMonitor collects packet-level statistics
 NetAnim generates XML-based animation output
 
 **‎Usage Instructions:**
+
 Install the necessary environment using NS-3, Ganache, IPFS, and the required Python packages and put the project into the NS-3 working directory and compile with the NS-3 build system. Change to the scratch/ directory and run any of scenario files to execute the simulation. The data set is created automatically on the fly and there is no need to load data manually. Upon execution, it also produces performance metrics files (ACT.txt, TPT.txt, CR.txt, ACC.txt, TP.txt) and NetAnim XML files may be analyzed and examined to understand network behavior.
 
 **‎Requirements:**
@@ -151,4 +153,5 @@ pyswarm
 scrypt
 
 **‎Methodology:**
+
 The project is based on a simulation-based approach where synthetic healthcare data is created and subsequently employed to create a network model comprising of user nodes, base stations, and a blockchain node. NS-3 modules used in configuring communication and mobility include Wi-Fi, AODV routing, CSMA links, 6LoWPAN and mobility models. The system then provides performance metrics and stores them in the form of text outputs. The attribute-based cryptography layer includes security, and multi-criteria decision mechanism (SG-MCDF) ranks and blockchain storage. Recently, RNHSP (Raft), Paxos, Viewstamped Replication, and PBFT protocols are implemented in various scenarios to allow comparing them. NetAnim is used to visualize the simulation results and the network-level performance metrics, including the packet delivery and the delay, can be collected by using an analysis tool, FlowMonitor.
